@@ -11,9 +11,9 @@
 }
 
 :root {
-  --bg-color: #e3e3e3;
+  --bg-color: #000000;
   --second-bg-color: #000000;
-  --text-color: rgba(0, 0, 0, 0.792);
+  --text-color: rgba(255, 255, 255, 0.792);
   --main-color: rgb(255, 0, 0);
   --second-color: #ffffff;
   --third-color: #5e6460;
@@ -130,12 +130,19 @@ span {
   margin-top: 1.5rem;
   line-height: 1;
 }
+
+.home-content h1 span {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+  }
 .home-img {
   border-radius: 50%;
 }
 
 .home-img img {
-  top: 3rem;
+
   width: 24vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--six-color);
@@ -351,12 +358,12 @@ span {
 }
 .timeline-content h3 {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin: 0 0 10px;
   font-weight: 800;
 }
 .timeline-content p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -802,9 +809,12 @@ span {
   opacity: 0.15;
 }
 
-.about {
+.about { 
+    color: var(--six-color);
+  background-color: var(--third-color);
   margin-bottom: 300px;
   margin-top: -150px;
+  padding-bottom: 100px;
 }
 .about-item {
   max-width: 800px;
@@ -1025,12 +1035,25 @@ span {
     flex-direction: column-reverse;
     margin: 5rem 4rem;
   }
+
+  .home-content {
+    margin-top: -13rem;
+  }
   .home-content h3 {
     font-size: 2.6rem;
+    margin-bottom: -2px;
   }
   .home-content h1 {
-    font-size: 8rem;
+    font-weight: 500;
+    font-size: 4rem;
     margin-top: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .home-content h1 span {
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 10px;
   }
   .home-content p {
     max-width: 600px;
